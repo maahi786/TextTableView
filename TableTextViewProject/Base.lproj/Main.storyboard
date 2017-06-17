@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hhr-DI-tXZ" customClass="TextInputView">
+                                <rect key="frame" x="10" y="83" width="169.5" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="First Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AWd-BT-sb4" customClass="TextInputView">
+                                <rect key="frame" x="196.5" y="83" width="169.5" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Last Name"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ocv-ss-GDV" customClass="TextInputView">
+                                <rect key="frame" x="10" y="135" width="169.5" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="State"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxn-Al-n8s" customClass="TextInputView">
+                                <rect key="frame" x="197" y="135" width="169.5" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Country"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="H3R-YY-gyH" customClass="TextInputView">
+                                <rect key="frame" x="10" y="184" width="169.5" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Pincode"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nRt-Cg-2ke" customClass="TextInputView">
+                                <rect key="frame" x="196" y="184" width="169.5" height="34.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Id"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="86f-mo-sWW">
+                                <rect key="frame" x="150" y="387" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="cPU-aR-2Ti"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.43921568989999998" green="0.01176470611" blue="0.1921568662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="86f-mo-sWW" firstAttribute="top" secondItem="H3R-YY-gyH" secondAttribute="bottom" constant="168.5" id="4UW-Lg-79I"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nRt-Cg-2ke" secondAttribute="trailing" constant="-6.5" id="EN0-cB-Qc0"/>
+                            <constraint firstItem="86f-mo-sWW" firstAttribute="leading" secondItem="H3R-YY-gyH" secondAttribute="trailing" constant="-29.5" id="Fbh-Jr-XUQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="bxn-Al-n8s" secondAttribute="trailing" constant="-7.5" id="FzX-Ur-HK3"/>
+                            <constraint firstItem="H3R-YY-gyH" firstAttribute="top" secondItem="Ocv-ss-GDV" secondAttribute="bottom" constant="14.5" id="Haz-v8-mOC"/>
+                            <constraint firstItem="bxn-Al-n8s" firstAttribute="top" secondItem="AWd-BT-sb4" secondAttribute="bottom" constant="17.5" id="HuX-VN-pEr"/>
+                            <constraint firstItem="Hhr-DI-tXZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="IUD-bj-UZM"/>
+                            <constraint firstItem="AWd-BT-sb4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="JMA-LL-Lft"/>
+                            <constraint firstItem="nRt-Cg-2ke" firstAttribute="top" secondItem="bxn-Al-n8s" secondAttribute="bottom" constant="14.5" id="Kmd-Lw-7SR"/>
+                            <constraint firstItem="Hhr-DI-tXZ" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="Luz-9v-aaT"/>
+                            <constraint firstItem="bxn-Al-n8s" firstAttribute="width" secondItem="AWd-BT-sb4" secondAttribute="width" id="M2g-ec-tKd"/>
+                            <constraint firstItem="Ocv-ss-GDV" firstAttribute="width" secondItem="Hhr-DI-tXZ" secondAttribute="width" id="SiJ-iH-9ru"/>
+                            <constraint firstItem="Ocv-ss-GDV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="WVH-0S-pRR"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="AWd-BT-sb4" secondAttribute="trailing" constant="-7" id="bc8-xq-2Tf"/>
+                            <constraint firstItem="AWd-BT-sb4" firstAttribute="leading" secondItem="Hhr-DI-tXZ" secondAttribute="trailing" constant="17" id="eHH-w4-04I"/>
+                            <constraint firstItem="nRt-Cg-2ke" firstAttribute="leading" secondItem="H3R-YY-gyH" secondAttribute="trailing" constant="16.5" id="hve-w9-7cr"/>
+                            <constraint firstItem="H3R-YY-gyH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-6" id="i6v-Jw-4kC"/>
+                            <constraint firstItem="Hhr-DI-tXZ" firstAttribute="width" secondItem="AWd-BT-sb4" secondAttribute="width" id="kXx-1g-LCl"/>
+                            <constraint firstItem="Ocv-ss-GDV" firstAttribute="top" secondItem="Hhr-DI-tXZ" secondAttribute="bottom" constant="17.5" id="sml-BT-pWP"/>
+                            <constraint firstItem="H3R-YY-gyH" firstAttribute="width" secondItem="Ocv-ss-GDV" secondAttribute="width" id="vcH-7P-ApV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryInputView" destination="bxn-Al-n8s" id="hyS-BK-n7y"/>
+                        <outlet property="firstNameInputView" destination="Hhr-DI-tXZ" id="bYu-ak-1Vg"/>
+                        <outlet property="lastNameInputView" destination="AWd-BT-sb4" id="Xgz-ek-pBa"/>
+                        <outlet property="stateInputView" destination="Ocv-ss-GDV" id="Gsg-N3-5Cr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+</document>
