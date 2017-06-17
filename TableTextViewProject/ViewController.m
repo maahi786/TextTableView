@@ -21,61 +21,8 @@
     _countryInputView.valueArray = @[@"q",@"r",@"s",@"t",@"q",@"r",@"s",@"t",@"q",@"r",@"s",@"t"];
     _stateInputView.valueArray = @[@"my",@"r",@"s",@"t",@"q",@"r",@"s",@"t",@"q",@"r",@"s",@"t"];
     
-    
-//  //  [self getAllUsers];
-//
-//    NSString* urlstr = [NSString stringWithFormat:@"http://localhost:3000/users"];
-//    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstr]];
-//    [request setHTTPMethod:@"POST"];
-//    [request setValue:@"Application/json" forHTTPHeaderField:@"Content-type"];
-//    
-//    NSDictionary* info = @{@"name" : @"hitzz", @"movie" : @"grgrghhtjj"};
-//    
-//    NSError* error;
-//    NSData* infoData = [NSJSONSerialization dataWithJSONObject:info options:0 error:&error];
-//    [request setHTTPBody:infoData];
-//    
-//    NSURLSession* session = [NSURLSession sharedSession];
-//    
-//    NSURLSessionTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-//        
-//       // NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-//       // NSLog(@"%@", json);
-//        
-//       // [self getAllUsers];
-//
-//    }];
-//    [task resume];
-    
-    
-
-
-    
-    
-    
-    
 }
 
--(void)getAllUsers{
-    NSString* urlstr = [NSString stringWithFormat:@"http://localhost:3000/users"];
-    NSMutableURLRequest* request = [NSMutableURLRequest requestWithURL:[NSURL URLWithString:urlstr]];
-    [request setHTTPMethod:@"GET"];
-    [request setValue:@"Application/json" forHTTPHeaderField:@"Content-type"];
-    
-    NSURLSession* session = [NSURLSession sharedSession];
-    
-    NSURLSessionTask* task = [session dataTaskWithRequest:request completionHandler:^(NSData * _Nullable data, NSURLResponse * _Nullable response, NSError * _Nullable error) {
-        
-        if (data != nil) {
-            NSDictionary* json = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:&error];
-            NSLog(@"%@", json);
-
-
-        }
-    }];
-    [task resume];
-    
-}
 
 #pragma mark - UITextFieldDelegate
 
